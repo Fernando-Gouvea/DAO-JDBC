@@ -22,9 +22,17 @@ public class program {
 		System.out.print("------Teste 1 ---findById------\n");
 		System.out.println(seller);
 		
-		System.out.println("\n-----Teste 2-----findById------\n");
+		System.out.println("\n-----Teste 2-----Seller findById------\n");
 		Department department =  new Department(2 ,null);
 		List<Seller> list = sellerDao.findByDepartment(department);
+		
+		for (Seller obj : list) {
+			System.out.println(obj);
+		}
+		
+		System.out.println("\n-----Teste 3-----Seller findAll------\n");
+		department =  new Department();
+		list = sellerDao.findAll();
 		
 		for (Seller obj : list) {
 			System.out.println(obj);
