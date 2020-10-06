@@ -45,6 +45,11 @@ public class program {
 		
 		
 		
+		System.out.println("\n-------Teste 5-----Seller Update-----\n");
+		seller = sellerDao.findById(1);
+		seller.setName("Martha Waine");
+		sellerDao.update(seller);
+		System.out.println("Update complete");
 		
 
 	}
