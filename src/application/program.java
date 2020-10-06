@@ -38,6 +38,10 @@ public class program {
 			System.out.println(obj);
 		}
 		
+		System.out.println("\n------Teste 4----Seller insert-----\n");
+		Seller newSeller = new Seller(null, "Greg","greg@gmail.com", new Date(), 4000.0, new Department(2,null));
+		sellerDao.insert(newSeller);
+		System.out.println("Inserted! New id = "+ newSeller.getId());
 		
 		
 		
